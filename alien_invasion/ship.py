@@ -20,6 +20,8 @@ class Ship():
 		self.moving_left = False
 		self.moving_down = False
 
+
+
 	def blitme(self):
 
 		self.screen.blit(self.image, (self.rect.x, self.rect.y))
@@ -28,13 +30,13 @@ class Ship():
 	def update(self):
 
 		if self.moving_right:
-			self.rect.centerx += 1
+			self.rect.centerx += self.ship_speed_factor
 		if self.moving_left:
-			self.rect.centerx -= 1
+			self.rect.centerx -= self.ship_speed_factor
 		if self.moving_up:
-			self.rect.centery -= 1
+			self.rect.centery -= self.ship_speed_factor
 		if self.moving_down:
-			self.rect.centery += 1
+			self.rect.centery += self.ship_speed_factor
 
 
 		if self.rect.x <= 0:
