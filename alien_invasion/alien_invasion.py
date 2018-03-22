@@ -1,6 +1,8 @@
 import sys
 import pygame
 from settings import Settings
+from ship import Ship
+from game_functions import *
 
 def FXM_run_game():
 	pygame.init()
@@ -9,16 +11,13 @@ def FXM_run_game():
 
 	pygame.display.set_caption("Alien_Invasion")
 
-
+	ship = Ship(screen)
 
 	while True:
-		for event in pygame.event.get():
-			if event.type == pygame.QUIT:
-				sys.exit()
-
-		screen.fill(ai_settings.bg_color)
+		check_events(ship)
+		ship.update()
+		update_screen(ai_settings, screen, ship)
 		pygame.display.flip()
-
 
 
 FXM_run_game()
