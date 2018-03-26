@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>伪类选择器</title>
+	<style type="text/css">
+		/*
+			表示没访问过得连接
+
+		*/
+		a:link{
+			color:yellow;
+		}
+		/*
+			visited 访问过的连接
+		*/
+		a:visited{
+			color:blue;
+			font-size: 50px;
+			background-color:yellow;
+		}
+
+		/*
+			:hover 表示鼠标移入的状态
+		*/
+
+		a:hover{
+			color:skyblue;
+		}
+		p:hover{
+			color:skyblue;
+		}
+		
+		/*
+			:active 表示连接点击的状态
+		*/
+		a:active{
+			color:black;
+			background-color:orange;
+		}
+
+		input:focus{
+			background-color: yellow;
+
+		}
+		/*兼容大部分浏览器*/
+		p::selection{
+			background-color:orange;
+		}
+		p::-moz-selection{
+			background-color:orange;
+		}
+
+	</style>
+</head>
+<body>
+	<a class="abc" href="http://www.baidu.com">访问连接</a>
+	<a class="bcd" href="http://www.baidu123456ddfdf.com">访问连接</a>
+	<!-- 创建一个文本编辑框 -->
+	<input type="text" />
+
+	<p>
+		
+		sdfjlajsf 
+		afklasfdj
+		asldfkjas
+		flsfj
+		asdlfj
+	</p>
+
+</body>
+</html>
