@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>属性选择器</title>
+</head>
+	<style type="text/css">
+	/*
+	属性选择器
+		作用：可以根据属性来来制定元素
+		语法：
+				【属性名】选取含有制定属性的元素
+				【属性名=“属性值”】选取还有制定的属性值得元素
+				^表示以什麼開始
+
+
+
+
+
+
+				*/
+
+		p[title]{
+			background-color:yellow;
+		}
+		p[title = "hello"]{
+			background-color:yellow;
+		}
+		p[title ^= "he"]{
+			background-color:yellow;
+		}
+		p[title $= "c"]{
+			background-color:red;
+		}
+		p[title *= "a"]{
+			background-color:red;
+		}
+	</style>
+<body>
+	<p title = "hello">我是一个段落</p>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<p title = "11">我是一个段落</p>
+	<p title = "hedf">我是一个段落</p>
+	<p title = "hedfsaf">我是一个段落</p>
+	<p title = "hedsf">我是一个段落</p>
+	<p title = "hecv">我是一个段落</p>
+	<p title = "he2">我是一个段落</p>
+	<p title = "hedfc">我是一个段落</p>
+	<p title = "hedfsafc">我是一个段落</p>
+	<p title = "hedsfc">我是一个段落</p>
+	<p title = "hecvc">我是一个段落</p>
+	<p title = "he2c">我是一个段落</p>
+
+</body>
+</html>
