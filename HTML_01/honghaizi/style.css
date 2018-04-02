@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+
+
+/*测试属性*/
+.ceshi_border{
+	border:1px solid #000;
+}
+.ceshi_w_h{
+	width: 300px;
+	height: 300px;
+	background-color: #bbb
+}
+
+
+
+
+/*浮空*/
+.float_L{
+	float:left;
+}
+.float_R{
+	float:right;
+}
+
+
+/*文本对齐*/
+.align_L{
+	text-align:left;
+}
+.align_R{
+	text-align:right;
+}
+.align_center{
+	text-align:center;
+}
+
+
+/*块元素居中*/
+.block_center{
+	display:block;
+	margin:0px auto;
+}
+
+/*顶头导航栏底层*/
+.title{
+	border:1px solid #eee;
+	background-color: #eee;
+
+}
+
+
+
+/*高度塌陷*/
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+
+}
+
+/*顶头导航栏列表*/
+.ul_title{
+	list-style:none;
+	width: 1200px;
+	margin:10px auto;
+	/*padding:1px;*/
+	/*border:2px solid #000;*/
+
+}
+
+/*顶头导航栏左边浮动*/
+.li_title_L{
+	padding:0px 5px;
+	float:left;
+	/*margin-bottom:6px;*/
+}
+.li_title_R{
+	padding:0px 5px;
+	float:right;
+	/*margin-bottom:6px;*/
+}
+
+
+/*顶头导航栏超链接设置*/
+.a_title{
+	text-decoration:none;
+	display:block;
+	font:12px "微软雅黑";
+	color:#000;
+}
+.a_title:hover{
+	color:#F00;
+
+}
+
+
+/*底层的宽*/
+.bottom_layer{
+	width: 1200px;
+	height: auto;
+	margin: 0px auto;
+}
+
+
+/*搜索栏底层*/
+.logo_bottom{
+	
+
+}
+
+/*二维码的外边距*/
+.guanggao_02{
+	margin:10px 10px;
+}
+
+
+/*搜索框*/
+.search_frame{
+	outline:none;
+	border:1px solid #fff;
+	width: 405px;
+	height: 35px;
+	font:12px "sans-serif";
+	/*margin-left:auto 70px;*/
+	/*margin:auto 70px;*/
+}
+
+/*.search_frame::-webkit-search-cancel-button{
+	display: none;
+}
+*/
+
+
+/*搜索栏底层*/
+.search_bottom_01{
+	width: 559px;
+	border:2px solid #f90;
+}
+.search_bottom_02{
+	margin:30px 0px 0px 28px;
+	width: 531px;	
+}
+
+
+/*搜索文字*/
+.search_word_bottom{
+	width: 122px;
+}
+.search_word{
+	display:block;
+	text-align: center;
+	text-decoration:none;
+	background-color: #f90;
+	font:bold 20px "sans-serif";
+	color:#fff;
+	line-height: 37px
+}
+.search_word:hover{
+	background-color: #f70;
+}
+
+/*搜索栏下方导航*/
+.logo_bottom .list_01{
+	list-style:none;
+	height: 30px;
+}
+
+.logo_bottom .li_01{
+	padding: 0px 7px;
+	margin:5px 0px;
+	border-right:1px solid #ccc;
+}
+
+.logo_bottom .li_01:last-child{
+	/*padding: 0px 7px;*/
+	/*margin:5px 0px;*/
+	border-right:none;
+}
+
+
+.logo_bottom>.search_bottom_02 .a_01{
+	display: block;
+	font: 13px sans-serif;
+	color:#999;
+	text-decoration: none;
+	line-height:13px;
+	/*background-color: #f00;*/
+}
+.logo_bottom>.search_bottom_02 .a_01:hover{
+	color:red;
+}
+.logo_bottom>.search_bottom_02 .a_01_01{
+	color:red;
+}
+
+
+/*分来导航栏*/
+.navigation_classification{
+	margin: 10px 0px 0px 0px;
+	width: 1200px;
+
+}
