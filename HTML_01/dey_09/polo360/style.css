@@ -1,0 +1,159 @@
+body{
+	background:url(images/background_01.png) repeat-x;
+}
+
+
+
+
+/*测试边框*/
+.ceshi_border{
+	border: 1px solid #ff0;
+}
+.ceshi_wh{
+	width: 200px;
+	height: 500px;
+	background-color: #777;
+	background-image: url(./images/background.png);
+}
+
+/*浮空*/
+.float_L{
+	float:left;
+}
+.float_R{
+	float:right;
+}
+
+
+/*aaaa*/
+.bottom{
+	width: 940px;
+	margin:0px auto;
+}
+
+.logo_bottom{
+	
+
+}
+
+
+/*高度塌陷*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+/*logo*/
+.logo{
+	display: block;
+	margin-top:37px;
+	margin-bottom:46px;
+}
+
+
+/*导航*/
+.logo_bottom .li_01{
+	float: left;
+	padding:22px 11px 0px;
+}
+
+.logo_bottom .a_01{
+	font:14px Georgia;
+	text-decoration:none;
+	color:#666;
+}
+.logo_bottom .a_01:hover{
+	color:#f00;
+}
+.logo_bottom .p_01{
+	font:11px Tahoma;
+	color:#b7b7b7;
+}
+
+
+.logo_bottom .ul_01{
+	margin:37px 0px 0px;
+}
+/******/
+
+
+/*导航栏下面的 广告*/
+.Advertisement_01{
+	width: 100%;
+	height: 356px;
+	position:relative;
+	background: url(images/Advertisement_shadow_01.png) bottom center no-repeat;
+}
+
+.Advertisement_01 .a_01{
+	display:block;
+	width: 17px;
+	height: 17px;	
+	background:url(images/Advertisement_button_01.png) no-repeat;
+}
+.Advertisement_01 .a_01:hover{
+	background-position:-21px 0px;
+}
+.Advertisement_01 .ul_01{
+	position:absolute;
+	top: 314px;
+	left: 15px;
+	width: 140px;
+}
+.Advertisement_01 .li_01{
+	float:left;
+	padding-left:5px;
+}
+/******/
+
+
+/*内容上面的字*/
+.top_p_01{
+	font:bold 24px "Georgia";
+	line-height: 44px;
+	text-align:center;
+}
+/******/
+
+
+
+/*内容*/
+.text{
+	width: 100%;
+	height: 435px;
+	margin-top:40px;
+}
+
+.text .div_01{
+	width: 302px;
+	height: 100%;
+}
+.text .div_01_01{
+	width: 100%;
+	height: 206px;
+	background:url(images/pick_shedow_01.png) no-repeat;
+}
+.text .div_01_01_01{
+	width: 299px;
+	height: 196px;
+	background:url(images/pick_bg_01.png) no-repeat;
+	/*background-color: red;*/
+	margin:5px 0px;
+	padding:7px;
+	overflow: 
+}
+.text .a_01{
+	text-decoration:none;
+	font:21px Georgia;
+	color:#11719e;
+}
+.text .a_01:hover{
+	color:#f00;
+}
+.text .p_01{
+	font:12px "MyriadPro";
+	color:#8c8c8c;
+}
+/******/

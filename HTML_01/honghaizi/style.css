@@ -45,6 +45,12 @@
 	margin:0px auto;
 }
 
+
+/*相对定位*/
+.position_relative{
+	position:relative;
+}
+
 /*顶头导航栏底层*/
 .title{
 	border:1px solid #eee;
@@ -200,7 +206,45 @@
 
 /*分来导航栏*/
 .navigation_classification{
+	overflow: hidden;
 	margin: 10px 0px 0px 0px;
 	width: 1200px;
+}
+
+.navigation_classification .a_01{
+	display: block;
+	background-color: #fa0;
+	width: 140px;
+	padding:10px 7px;
+	font:bold 14px serif;
+	color:#fff;
+	text-decoration:none;
+}
+
+.navigation_classification .a_02{
+	/*margin-top:20px;*/
+	text-decoration:none;
+	font:bolder 15px sans-serif;
+	color: #000;
+
+}
+.navigation_classification .p_01{
+	margin-top:15px;
+	/*text-decoration:none;*/
+}
+
+
+
+
+/*做底层块*/
+.bottom_most{
+	height: 440px;
+	width: 100%;
+	background-color:pink;
+	position:absolute;
+	top:189px;
+	z-index: 1;
+
+
 
 }
