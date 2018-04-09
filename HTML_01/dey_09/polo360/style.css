@@ -223,23 +223,25 @@ body{
 	/*background:#ddd;*/
 }
 .text_02 .input_01 {
-	width: 296px;
-	height: 31px;
+	width: 290px;
+	height: 27px;
 	background:url(images/input_01.png) no-repeat;
 	border:none;
 	font:10px Verdana;
 	color:#000;
 	margin-bottom:18px;
 	overflow:auto;
+	padding:3px;
 
 }
 .text_02 .input_01::-webkit-input-placeholder {
 	font:10px Verdana;
 	color:#d4d4d4;
+	padding:3px;
 }
 .text_02 .textarea_01 {
-	width: 292px;
-	height: 130px;
+	width: 290px;
+	height: 128px;
 	border:none;
 	background:url(images/textarea_01.png) no-repeat;
 	resize: none;
@@ -247,10 +249,12 @@ body{
 	color:#000;
 	margin-bottom:18px;
 	overflow:auto;
+	padding:3px;
 }
 .text_02 .textarea_01::-webkit-input-placeholder {
 	font:10px Verdana;
 	color:#d4d4d4;
+	padding:3px;
 }
 
 .text_02 .button_01{
@@ -319,7 +323,7 @@ body{
 	background-color: #333;
 }
 
-.end_02 .div_01{
+.end_02 .v_01{
 	width: 940px;
 	margin:10px auto;
 
