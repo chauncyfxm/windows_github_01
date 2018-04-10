@@ -9,7 +9,7 @@
 .ceshi_border{
 	border:1px solid #000;
 }
-.ceshi_w_h{
+.ceshi_wh{
 	width: 300px;
 	height: 300px;
 	background-color: #bbb
@@ -46,9 +46,12 @@
 }
 
 
-/*相对定位*/
+/*定位*/
 .position_relative{
 	position:relative;
+}
+.position_absolute{
+	position:absolute;
 }
 
 /*顶头导航栏底层*/
@@ -240,11 +243,40 @@
 .bottom_most{
 	height: 440px;
 	width: 100%;
-	background-color:pink;
+	background-color:#eef;
+	/*top:189px;*/
+	/*z-index: 1;*/
+	overflow:hidden;
+}
+.bottom_most .div_01{
+	width: 1900px;
+	margin:0px auto;
+
+}
+.bottom_most_L_img{
+
+	margin-left: -950px;
+}
+.bottom_most_R_img{
+	margin-left: 425px;
+}
+.bottom_most img{
+    position: absolute;
+    /*width: 545px;*/
+    /*height: 440px;*/
+    left: 50%;
+    /*top: 0;*/
+}
+
+/*底层的横批*/
+.banner_wrapper{
+	width: 100%;
+	height: auto;
 	position:absolute;
-	top:189px;
-	z-index: 1;
+	z-index: 20;
+}
 
-
-
+.i_01{
+	font-family: ng-iconfont!important;
+	-webkit-font-smoothing: antialiased;
 }
