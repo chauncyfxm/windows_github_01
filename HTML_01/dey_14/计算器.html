@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算器</title>
+	<style type="text/css">
+		.texttarea_a{
+			resize: none;
+		}
+
+	</style>
+	<script type="text/javascript">
+
+		function sum(){
+
+			var sum = 0;
+
+			// var oP_01 = document.getElementById("p_01");
+			// alert(oP_01.innerHTML);
+			var oInput_01 = document.getElementById("input_01");
+			var oInput_02 = document.getElementById("input_02");
+			// var oOption_jia = document.getElementById("option_jia");
+			// var oOption_jian = document.getElementById("option_jian");
+			// var oOption_cheng = document.getElementById("option_cheng");
+			// var oOption_chu = document.getElementById("option_chu");
+			var oSelect_01 = document.getElementById("select_01");
+			var oTexttarea_01 = document.getElementById("texttarea_01");
+			// alert(oSelect_01.value);
+			if(Number(oInput_01.value) && Number(oInput_02.value)){
+				alert("你的数字类型还是"+typeof oInput_01.value);
+
+
+			switch(oSelect_01.value){
+				case "+":
+					sum = (parseFloat(oInput_01.value)*100 + parseFloat(oInput_02.value)*100)/100;
+					break;
+				case "-":
+					sum = (parseFloat(oInput_01.value)*100 - parseFloat(oInput_02.value)*100)/100;
+					// sum = oInput_01.value + oInput_02.value;
+					break;
+				case "*":
+					sum = ((parseFloat(oInput_01.value)*100) * (parseFloat(oInput_02.value)*100))/10000;
+					// sum = oInput_01.value + oInput_02.value;
+					break;
+				case "/":
+					sum = ((parseFloat(oInput_01.value)*100) / (parseFloat(oInput_02.value)*100));
+					// sum = oInput_01.value + oInput_02.value;
+					break;
+			}
+			oTexttarea_01.value = sum;
+		}else{
+			oTexttarea_01.value = "请输入一个数字吧";
+
+		}
+		}
+
+	</script>
+</head>
+<body>
+	<h1>计算器</h1>
+	<input type="text" name="" id="input_01">	
+	<select id="select_01" >
+		<option value="+" id="option_jia">+</option>
+		<option value="-" id="option_jian">-</option>
+		<option value="*" id="option_cheng">*</option>
+		<option value="/" id="option_chu">/</option>
+	</select>
+	<input type="text" name="" id="input_02">	
+	<input type="button" name="" value="计算" onclick="sum()">
+	<br>
+
+	<br>
+	计算结果
+	<br>
+	<textarea id="texttarea_01" class="texttarea_a"></textarea>
+
+</body>
+</html>

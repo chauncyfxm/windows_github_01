@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+function getElements()
+  {
+  var x=document.getElementsByTagName("input");
+  alert(x.length);
+  alert(x[1].value);
+
+  }
+window.onload = function(){
+
+	var tables = document.getElementsByTagName("table");
+	alert ("This document contains " + tables.length + " tables");
+
+}
+</script>
+</head>
+<body>
+
+<input name="myInput" value="aaaa" type="text" size="20" /><br />
+<input name="myInput" type="text" size="20" /><br />
+<input name="myInput" type="text" size="20" /><br />
+<br />
+<input type="button" onclick="getElements()"
+value="How many input elements?" />
+
+</body>
+</html>

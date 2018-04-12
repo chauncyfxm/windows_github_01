@@ -7,7 +7,7 @@
 
 /*测试属性*/
 .ceshi_border{
-	border:1px solid #000;
+	border:1px solid #f00;
 }
 .ceshi_wh{
 	width: 300px;
@@ -241,7 +241,7 @@
 
 /*做底层块*/
 .bottom_most{
-	height: 440px;
+	height: 448px;
 	width: 100%;
 	background-color:#eef;
 	/*top:189px;*/
@@ -268,15 +268,69 @@
     /*top: 0;*/
 }
 
-/*底层的横批*/
+/*横批*/
 .banner_wrapper{
 	width: 100%;
-	height: auto;
+	height: 448px;
 	position:absolute;
 	z-index: 20;
 }
+.banner_wrapper .bottom_layer{
+	height: 448px;
+}
 
-.i_01{
-	font-family: ng-iconfont!important;
-	-webkit-font-smoothing: antialiased;
+.banner_wrapper .i_01{
+	margin-left:4px;
+	color:#fa0;
+	font-size:15px;
+}
+
+.banner_wrapper .ul_01{
+	width: 154px;
+	list-style-type:none;
+
+}
+
+.banner_wrapper .li_01{
+	background:#000;
+}
+
+.banner_wrapper .a_01{
+	text-decoration:none;
+	color:#fff;
+	font:12px serif;
+	line-height: 32px;
+}
+
+/*.banner_wrapper .a_01:hover,.li_01:hover{
+	background:#fff;
+	color:#000;
+}
+*/
+
+.banner_wrapper em{
+	margin-left:3px;
+	font:8px serif;
+	color:#aaa;
+}
+
+.banner_wrapper .li_01:hover{
+	background:#fff;
+}
+
+.banner_wrapper .li_01:hover .a_01{
+	color:#000;
+}
+.banner_wrapper .li_01:hover em{
+	color:#000;
+}
+.banner_wrapper  #a_a:hover{
+	color:#fa0;
+}
+
+/*子分类*/
+.subclass{
+	width: 1046px;
+	height: 100%;
+	background:#fff;
 }

@@ -3,10 +3,14 @@
 <head>
 	<title>红孩子</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="d:/珍贵资料/font-awesome.min.css"> -->
+	<script type="text/javascript" src="js/js_01.js"></script>
+	<!-- <script type="text/javascript" src="js/js_02.js"></script> -->
 </head>
 <body class="clearfix">
+	<!-- <p onclick="this.innerHTML='谢谢'">你好！</p> -->
 	<div class="title">
 		<ul class="ul_title clearfix">
 			<!-- 左边的 -->
@@ -91,90 +95,115 @@
 
 	</div>
 
-	<!-- 最底层的蓝色块 -->
-	<div class="banner_wrapper clearfix">
-		<div class="bottom_layer">
-			<i class="i_01"></i>
-			<ul class="ul_01">
-				<li class="li_01">
-					<a href="#" class="a_01 fa-search">手机</a>/
-					<a href="#" class="a_01">运营商</a>/
-					<a href="#" class="a_01">数码设备</a>/
+	<!-- 横批 -->
+	<div class="banner_wrapper clearfix ">
+		<div class="bottom_layer clearfix" >
+			<ul class="ul_01 float_L">
+				<li class="li_01 hover" id="display_01">
+					<i class="i_01 iconfont icon-shouji"></i>
+					<a href="#" id="a_a" class="a_01">手机</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">运营</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">数码设备</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">空调</a>/
-					<a href="#" class="a_01">电视</a>/
-					<a href="#" class="a_01">冰箱</a>/
+					<i class="i_01 iconfont icon-xianshiqi"></i>
+					<a href="#" id="a_a" class="a_01">空调</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">电视</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">冰箱</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">厨卫电器</a>/
-					<a href="#" class="a_01">生活家电</a>/
-					<a href="#" class="a_01">厨具</a>/
+					<i class="i_01 iconfont icon-dianfanbao-f"></i>
+					<a href="#" id="a_a" class="a_01">厨卫电器</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">家电</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">厨具</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">电脑办公</a>/
-					<a href="#" class="a_01">相机</a>/
-					<a href="#" class="a_01">DIY</a>/
+					<i class="i_01 iconfont icon-diannao"></i>
+					<a href="#" id="a_a" class="a_01">电脑办公</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">相机</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">DIY</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">家具</a>/
-					<a href="#" class="a_01">家电</a>/
-					<a href="#" class="a_01">家装</a>/
+					<i class="i_01 iconfont icon-yingerche"></i>
+					<a href="#" id="a_a" class="a_01">家具</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">家电</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">家装</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">食品</a>/
-					<a href="#" class="a_01">酒水</a>/
-					<a href="#" class="a_01">生鲜</a>/
+					<i class="i_01 iconfont icon-shafa"></i>
+					<a href="#" id="a_a" class="a_01">食品</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">酒水</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">生鲜</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">个性化妆</a>/
-					<a href="#" class="a_01">制品</a>/
-					<a href="#" class="a_01">清洁</a>/
+					<i class="i_01 iconfont icon-ziyuan"></i>
+					<a href="#" id="a_a" class="a_01">个性化妆</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">制品</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">清洁</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">母婴</a>/
-					<a href="#" class="a_01">玩具</a>/
-					<a href="#" class="a_01">车床</a>/
+					<i class="i_01 iconfont icon-ziyuan1"></i>
+					<a href="#" id="a_a" class="a_01">母婴</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">玩具</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">车床</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">运动</a>/
-					<a href="#" class="a_01">户外</a>/
-					<a href="#" class="a_01">足球</a>/
+					<i class="i_01 iconfont icon-lanqiu"></i>
+					<a href="#" id="a_a" class="a_01">运动</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">户外</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">足球</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">男装</a>/
-					<a href="#" class="a_01">女装</a>/
-					<a href="#" class="a_01">内衣</a>/
+					<i class="i_01 iconfont icon-yifu"></i>
+					<a href="#" id="a_a" class="a_01">男装</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">女装</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">内衣</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">皮鞋</a>/
-					<a href="#" class="a_01">皮装</a>/
-					<a href="#" class="a_01">钟表</a>/
+					<i class="i_01 iconfont icon-gaogenxie"></i>
+					<a href="#" id="a_a" class="a_01">皮鞋</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">皮装</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">钟表</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">汽车摩托车</a>/
-					<a href="#" class="a_01">汽车精品</a>/
-					<a href="#" class="a_01">汽车服务</a>/
+					<i class="i_01 iconfont icon-qiche"></i>
+					<a href="#" id="a_a" class="a_01">汽车摩托</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">精品</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">服务</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">图书</a>/
-					<a href="#" class="a_01">童书</a>/
-					<a href="#" class="a_01">电子书</a>/
+					<i class="i_01 iconfont icon-ai-book"></i>
+					<a href="#" id="a_a" class="a_01">图书</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">童书</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">电子书</a>
 				</li>
 				<li class="li_01">
-					<a href="#" class="a_01">理财</a>/
-					<a href="#" class="a_01">共筹</a>/
-					<a href="#" class="a_01">分期</a>/
+					<i class="i_01 iconfont icon-qianmoney113"></i>
+					<a href="#" id="a_a" class="a_01">理财</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">共筹</a><em>/</em>
+					<a href="#" id="a_a" class="a_01">分期</a>
 				</li>
 			</ul>
 
+
+			<!-- 子菜单 -->
+			<div class="subclass float_L" id="Todisplay_01" style="display:none;" onmouseover="my_display('display_01',this)">
+				
+			</div>
+			<!-- 子菜单结束 -->
+
+
 		</div>
 	</div>
+	<!-- 横批结束 -->
 
+
+	<!-- 底层 -->
 	<div class="bottom_most">
-		<img class="bottom_most_L_img float_L" src="images/guanggao_05.png" alt="aaa">
-		<img class="bottom_most_R_img float_R" src="images/guanggao_06.png" alt="aaa">
+		<img class="bottom_most_L_img float_L" src="images/guanggao_05.png" alt="aaa" height="440px">
+		<img class="bottom_most_R_img float_R" src="images/guanggao_06.png" alt="aaa" height="440px">
 	</div>
+	<!-- 底层结束 -->
 
 </body>
 </html>
