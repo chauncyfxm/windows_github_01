@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>动画练习</title>
+	<style type="text/css">
+		.div_01{
+			width: 350px;
+			height: 150px;
+			position:absolute;
+			top:30px;
+			left:50%;
+			border:1px solid #000;
+			margin-left:-175px;
+		}
+		.clearfix{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		.div_a div{
+			float:left;
+			width: 35px;
+			height: 100px;
+			background:#000;
+			margin:0px 10px;
+			border-radius: 10px;
+			/*animation: moving 1s ease 0s both infinite;*/
+		}
+		.div_a .div_01_01{
+			background:#a00;
+			animation: moving 1s ease 0s both infinite;
+		}
+		.div_a .div_01_02{
+			background:#0a0;
+			animation: moving 1s ease 100ms both infinite;
+		}
+		.div_a .div_01_03{
+			background:#00a;
+			animation: moving 1s ease 200ms both infinite;
+		}
+		.div_a .div_01_04{
+			background:#0aa;
+			animation: moving 1s ease 300ms both infinite;
+		}
+		.div_a .div_01_05{
+			background:#a0a;
+			animation: moving 1s ease 400ms both infinite;
+		}
+		.div_a{
+			/*position:absolute;*/
+			/*top:30px;*/
+			float:left;
+			margin:10px 36px;
+			/*border:1px solid #000;*/
+			/*margin-top:5px;*/
+
+		}
+		p{
+			text-align: center;
+		}
+
+		@keyframes moving{
+			0%{
+				/*transform: translateY(0px);*/
+				transform: scale(1, 1);
+				/*background-color: cyan;*/
+			}
+			50%{
+				/*transform: translateY(400px);
+				background-color: gold;
+				border-radius: 0px;*/
+				transform: scale(1, 0.2);
+			}
+			100%{
+				/*transform: translateY(0px);
+				background-color: red;
+				border-radius: 50px;*/
+				transform: scale(1, 1);
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="div_01 clearfix">
+		<div class="div_a">
+			<div class="div_01_01"></div>
+			<div class="div_01_02"></div>
+			<div class="div_01_03"></div>
+			<div class="div_01_04"></div>
+			<div class="div_01_05"></div>
+		</div>
+
+		<p>lok ling……</p>
+	</div>
+
+</body>
+</html>

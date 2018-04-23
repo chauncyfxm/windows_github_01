@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡</title>
+	<link rel="stylesheet" type="text/css" href="选项卡.css"/>
+	<style type="text/css"></style>
+
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/js_01.js"></script>
+	<script type="text/javascript">
+		// alert($)
+		// 选项卡
+		$(function(){
+			$('#botton .btn').hover(function() {
+
+				$(this).addClass('cur').siblings().removeClass('cur');
+
+				$('.select .sel1').eq($(this).index()).addClass('active').siblings().removeClass('active');
+				// alert($('.select .sel1').index())
+			});
+		})
+		
+		//放大镜
+		function Zoom(imgbox, hoverbox, l, t, x, y, h_w, h_h, showbox) {
+    var moveX = x - l - (h_w / 2);
+    //鼠标区域距离
+    var moveY = y - t - (h_h / 2);
+    //鼠标区域距离
+    if (moveX < 0) {
+        moveX = 0
+    }
+    if (moveY < 0) {
+        moveY = 0
+    }
+    if (moveX > imgbox.width() - h_w) {
+        moveX = imgbox.width() - h_w
+    }
+    if (moveY > imgbox.height() - h_h) {
+        moveY = imgbox.height() - h_h
+    }
+    //判断鼠标使其不跑出图片框
+    var zoomX = showbox.width() / imgbox.width()
+    //求图片比例
+    var zoomY = showbox.height() / imgbox.height()
+
+    showbox.css({
+        left: -(moveX * zoomX),
+        top: -(moveY * zoomY)
+    })
+    hoverbox.css({
+        left: moveX,
+        top: moveY
+    })
+    //确定位置
+
+}
+
+function Zoomhover(imgbox, hoverbox, showbox) {
+    var l = imgbox.offset().left;
+    var t = imgbox.offset().top;
+    var w = hoverbox.width();
+    var h = hoverbox.height();
+    var time;
+    $(".probox img,.hoverbox").mouseover(function(e) {
+        var x = e.pageX;
+        var y = e.pageY;
+        $(".hoverbox,.showbox").show();
+        hoverbox.css("opacity", "0.3")
+        time = setTimeout(function() {
+            Zoom(imgbox, hoverbox, l, t, x, y, w, h, showbox)
+        }, 1)
+    }).mousemove(function(e) {
+        var x = e.pageX;
+        var y = e.pageY;
+        time = setTimeout(function() {
+            Zoom(imgbox, hoverbox, l, t, x, y, w, h, showbox)
+        }, 1)
+    }).mouseout(function() {
+        showbox.parent().hide()
+        hoverbox.hide();
+    })
+}
+$(function() {
+    Zoomhover($(".probox img"), $(".hoverbox"), $(".showbox img"));
+})
+
+	</script>
+</head>
+<body bgcolor="#f2eadd">
+	<div class="dd"><img class="d1" src="../image/p.png"></div>
+	<div class="ww">
+	<!-- 头部 -->
+		<div class="head">
+			<div class="head1 clearfix">
+				
+				<div class="t1 float_L"></div>
+
+				<ul>
+					<li class="p1"><a href="#" class="p3">每日上新</a></li>
+					<li class="p1"><a href="#" class="p3">TOP50</a></li>
+					<li class="p1"><a href="#" class="p3">我勒个去</a></li>
+					<li class="p1"><a href="#" class="p3">趣玩APP</a></li>
+				</ul>
+			</div>
+
+			<div class="head2 float_R">
+				<input class="ps" type="text" value="  腰带">
+				<img class="p7" src="../image/放大镜.png">
+				<div class="a_02"><a class="p3" href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E7%99%BB%E5%BD%95.html">登录</a></div>
+				<div class="a_02"><a class="p3" href="file:///D:/GitHub_win10_01/gitgub_win10_01/HTML/%E8%B6%A3%E7%8E%A9%E7%BD%91.html/html/%E7%99%BB%E5%BD%95.html">注册</a></div>
+<!-- 、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、 -->
+				<div class="nb">
+					<img class="t2" src="../image/购物车.png" alt="" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+					<div class="ss" style="display: none;" onmouseover="my_display_01('t2','ss')" onmouseout="my_display_02('t2','ss')">
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt1.png">
+								<p class="xzz">兔子灯&nbsp;变色小夜...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥69.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt2.png">
+								<p class="xzz">INNERNEED...</p></br
+								<p class="x1">x1</p></br>
+								<p class="xz">¥20.00元</p></br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt1">
+							<div class="xt2">
+								<img class="xtt" src="../image/xtt3.png">
+								<p class="xzz">米拉卡纳米喷雾...</p></br>
+								<p class="x1">x1</p></br>
+								<p class="xz">¥138.00元</p><br>
+								<p class="del">[删除]</p></br>
+							</div>
+						</div>
+						<div class="xt3">
+							<p class="xzz xtt2">共三件商品</p></br>
+							<p class="xzz xtt2">金额总计：¥227.00元</p></br>
+							<p class="xtt2"><img src="../image/1.1.1.png"></p>
+						</div>
+					</div>
+				</div>
+
+<!-- 、、、、、、、、、、、、、、、、、、、、、、、、、、、、、 -->
+			</div>
+		</div>
+
+		<div class="head3">
+			<div class="p9"><a class="p8" href="#">家居良品</a></div>
+			<div class="p9"><a class="p8" href="#">男得好货</a></div>
+			<div class="p9"><a class="p8" href="#">清新萌物</a></div>
+			<div class="p9"><a class="p8" href="#">与众不童</a></div>
+			<div class="p9"><a class="p8" href="#">视频找好玩</a></div>
+		</div>
+	</div>
+	
+
+
+	<!-- 正文 -->
+
+	 <div class="content">
+		<!-- 第一部分 -->
+		<div class="c1">
+			<div class="c2">
+					<div class="border_1">
+						<span class="c3"><a class="c4" href="#">首页/</a></span>
+						<span class="c0">极道无门|||双重公文安全背包</span>
+					</div>
+					
+					<div class="c11"><a href="#" class="c6"><img src="../image/fx5.png"></a></div>
+					<div class="c11"><a href="#" class="c6"><img src="../image/fx4.png"></a></div>
+					<div class="c11"><a href="#" class="c6"><img src="../image/fx3.png"></a></div>
+					<div class="c11"><a href="#" class="c6"><img src="../image/fx2.png"></a></div>
+					<div class="c11"><a href="#" class="c6"><img src="../image/fx1.png"></a></div>
+					<div class="c11"><a href="#" class="c7"><img src="../image/分享.png"></a></div>
+			</div>
+			<!-- ////////////////////// -->
+			<div id="border_2">
+				<div class="middle">
+					<!-- 放大镜start -->
+					
+						<div class="select">
+							<div class="sel1 active"><img src="../image/ren.png"></div>
+							<div class="sel1"><img src="../image/xuanxiang2.png"></div>
+							<div class="sel1"><img src="../image/xuanxiang3.png"></div>
+							<div class="sel1"><img src="../image/xuanxiang4.png"></div>
+							
+						</div>
+						
+					
+					<!-- 放大镜效果over -->
+					<div class="botton" id="botton">
+						<div class="btn cur"><img class="small" src="../image/bao1.png"></div>
+						<div class="btn"><img class="small" src="../image/bao2.png"></div>
+						<div class="btn"><img class="small" src="../image/bao3.png"></div>
+						<div class="btn"><img class="small" src="../image/bao4.png"></div>
+					</div>
+					
+				</div>
+				<div class="middle1"></div>
+			</div>
+			<!-- /////////////////// -->
+		</div>
+	</div>
+
+	
